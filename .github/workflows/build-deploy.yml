@@ -27,7 +27,6 @@ jobs:
       - name: Build the project
         run: |
           pnpm run build
-          pnpm next export
 
       - name: Setup SSH for deployment
         run: |
