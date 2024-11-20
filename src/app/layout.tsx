@@ -17,7 +17,9 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en" className={font.className}>
-            <body className={`antialiased`}>{children}</body>
+            <body className={`antialiased sm:overflow-y-scroll`}>
+                {children}
+            </body>
         </html>
     );
 }

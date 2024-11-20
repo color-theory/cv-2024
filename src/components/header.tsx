@@ -54,7 +54,7 @@ const Header = () => {
                     <div className="flex flex-nowrap">
                         <span className="bracket">{"}"}</span>;
                         <span className="comment pl-7">
-                            {"//"} ------------------------
+                            {"//"} ----------------
                         </span>
                     </div>
                 </div>

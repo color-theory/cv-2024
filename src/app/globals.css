@@ -97,7 +97,6 @@ a:active {
 body {
   color: var(--text-color);
   background: var(--body-bg-color);
-  overflow-y: scroll;
   height: 100vh;
 }
 
@@ -113,4 +112,5 @@ body {
 
 .copyright{
   color: var(--body-bg-color);
+  background: var(--content-bg-color);
 }
