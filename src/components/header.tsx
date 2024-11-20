@@ -30,7 +30,7 @@ const Header = () => {
     return (
         <header className="flex flex-col">
             <div className={`flex basis-1 flex-row justify-between ${theme}`}>
-                <div className="text-2xl">
+                <div>
                     <span className="secondaryKeyword">export default</span>{" "}
                     <span className="primaryKeyword">const</span>{" "}
                     <span className="variable">JohnStringer</span>:{" "}
@@ -49,25 +49,23 @@ const Header = () => {
                 </button>
             </div>
             <TopNav pathname={pathname} />
-            <div className="flex flex-row text-2xl">
-                <div className="flex flex-col overflow-hidden">
-                    <div className="flex flex-nowrap">
+            <div className="flex flex-row">
+                <div className="flex flex-col">
+                    <div className="flex">
                         <span className="bracket">{"}"}</span>;
-                        <span className="comment pl-7">
-                            {"//"} ----------------
-                        </span>
+                        <span className="comment pl-7">{"//"} -----------</span>
                     </div>
                 </div>
             </div>
-            <div className="text-2xl mt-5 ">
+            <div className="mt-5 ">
                 <span className="secondaryKeyword">export </span>
                 <span className="primaryKeyword">const </span>
                 <span className="function">{hrPath}</span> =
-                <div className="text-nowrap">
+                <span className="text-nowrap">
                     <span className="bracket"> ()</span>
                     <span className="primaryKeyword"> {"=>"}</span>{" "}
                     <span className="bracket">{"("}</span>
-                </div>
+                </span>
             </div>
         </header>
     );
