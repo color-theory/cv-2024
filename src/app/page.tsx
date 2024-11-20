@@ -13,6 +13,11 @@ export default function Home() {
         <div className={bodyClass}>
             <main className="mainContent flex flex-col md:p-10 h-lvh">
                 <Header />
+                <div className="text-2xl sm:pl-10 text-nowrap">
+                    <span className="angle">{"<"}</span>
+                    <span className="tag">pre</span>{" "}
+                    <span className="angle">{">"}</span>
+                </div>
                 <div className="text-2xl sm:pl-20">
                     <p className="pt-10">
                         Hello! Thanks for taking a look at this site. My name is
@@ -42,6 +47,11 @@ export default function Home() {
                         In my free time, I like to play retro video games,
                         paint, make music, and study Japanese.
                     </p>
+                </div>
+                <div className="text-2xl pt-10 sm:pl-10">
+                    <span className="angle">{"</"}</span>
+                    <span className="tag">pre</span>
+                    <span className="angle">{">"}</span>
                 </div>
                 <Footer />
             </main>

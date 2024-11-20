@@ -65,13 +65,6 @@ const Header = () => {
                 <span className="primaryKeyword"> {"=>"}</span>{" "}
                 <span className="bracket">{"("}</span>
             </div>
-            <div className="text-2xl sm:pl-10 text-nowrap">
-                <span className="angle">{"<"}</span>
-                <span className="tag">pre</span>{" "}
-                <span className="attribute">className</span>=
-                <span className="stringLiteral">{'"content"'}</span>
-                <span className="angle">{">"}</span>
-            </div>
         </header>
     );
 };
