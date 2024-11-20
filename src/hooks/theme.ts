@@ -7,7 +7,7 @@ export const useTheme = () => {
         const storedTheme = localStorage.getItem("theme") || "dark";
         setTheme(storedTheme);
         document.documentElement.setAttribute("data-theme", storedTheme);
-    });
+    }, []);
 
     return theme;
 };

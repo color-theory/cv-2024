@@ -34,8 +34,8 @@ export default function Home() {
                         on the Commodore 64 with MS-Basic, where I learned that
                         I could make computers do what I want with a little bit
                         of effort. Since then, my interests have evolved over
-                        the years, but I've always had a special place in my
-                        heart for creating.
+                        the years, but I&apos;ve always had a special place in
+                        my heart for creating.
                     </p>
 
                     <p className="pt-5">

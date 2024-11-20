@@ -12,7 +12,7 @@ const Header = () => {
         const storedTheme = localStorage.getItem("theme") || "dark";
         setTheme(storedTheme);
         document.documentElement.setAttribute("data-theme", storedTheme);
-    });
+    }, []);
 
     const toggleTheme = () => {
         const newTheme = theme === "light" ? "dark" : "light";
@@ -53,7 +53,7 @@ const Header = () => {
                 <div className="flex overflow-hidden">
                     <span className="flex bracket">{"}"}</span>;
                     <span className="flex comment pl-7">
-                        // ----------------
+                        {"//"} ----------------
                     </span>
                 </div>
             </div>
@@ -69,7 +69,7 @@ const Header = () => {
                 <span className="angle">{"<"}</span>
                 <span className="tag">pre</span>{" "}
                 <span className="attribute">className</span>=
-                <span className="stringLiteral">"content"</span>
+                <span className="stringLiteral">{'"content"'}</span>
                 <span className="angle">{">"}</span>
             </div>
         </header>
