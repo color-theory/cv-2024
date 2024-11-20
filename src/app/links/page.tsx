@@ -28,12 +28,12 @@ export default function Home() {
                         <ul className="pl-10">
                             <li>
                                 <Link href="https://github.com/color-theory/">
-                                    John Stringer&apos;s GitHub Page
+                                    GitHub Page
                                 </Link>
                             </li>
                             <li>
                                 <Link href="https://www.linkedin.com/in/john-stringer-63780279/">
-                                    John Stringer&apos;s linkedin
+                                    LinkedIn
                                 </Link>
                             </li>
                         </ul>

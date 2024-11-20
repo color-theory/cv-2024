@@ -59,13 +59,15 @@ const Header = () => {
                     </div>
                 </div>
             </div>
-            <div className="text-2xl mt-5 text-nowrap">
+            <div className="text-2xl mt-5 ">
                 <span className="secondaryKeyword">export </span>
                 <span className="primaryKeyword">const </span>
                 <span className="function">{hrPath}</span> =
-                <span className="bracket"> ()</span>
-                <span className="primaryKeyword"> {"=>"}</span>{" "}
-                <span className="bracket">{"("}</span>
+                <div className="text-nowrap">
+                    <span className="bracket"> ()</span>
+                    <span className="primaryKeyword"> {"=>"}</span>{" "}
+                    <span className="bracket">{"("}</span>
+                </div>
             </div>
         </header>
     );
