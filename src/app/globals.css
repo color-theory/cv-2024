@@ -3,13 +3,13 @@
 @tailwind utilities;
 
 :root {
-  --body-bg: #252526;
-  --content-bg: #1e1e1e;
-  --foreground: #D4D4C8;
+  --body-bg-color: #252526;
+  --content-bg-color: #1e1e1e;
+  --text-color: #D4D4C8;
   --const-color: #4FC1FF;
-  --type-foreground: #4DC9A1;
-  --link-color: #CE9154;
-  --link-active-color: #D7D3A1;
+  --type-color: #4DC9A1;
+  --string-literal-color: #CE9154;
+  --function-color: #D7D3A1;
   --primary-keyword-color: #569CD6;
   --secondary-keyword-color: #C586C0;
   --comment-color: #6A9956;
@@ -23,13 +23,13 @@
 [data-theme='light'] {
   --primary-keyword-color: #0000FF;
   --secondary-keyword-color: #AF01E3;
-  --body-bg: #F3F3F3;
-  --content-bg: #FFFFFF;
-  --foreground: #000000;
+  --body-bg-color: #F3F3F3;
+  --content-bg-color: #FFFFFF;
+  --text-color: #000000;
   --const-color: #0070C1;
-  --type-foreground: #257F99;
-  --link-color: #A21515;
-  --link-active-color: #795E27;
+  --type-color: #257F99;
+  --string-literal-color: #A21515;
+  --function-color: #795E27;
   --comment-color: #008000;
   --bracket-color: #0000FF;
   --property-color: #001080;
@@ -39,11 +39,11 @@
 }
 
 .function {
-  color: var(--link-active-color);
+  color: var(--function-color);
 }
 
 .stringLiteral {
-  color: var(--link-color);
+  color: var(--string-literal-color);
 }
 
 .primaryKeyword {
@@ -59,7 +59,7 @@
 }
 
 .type {
-  color: var(--type-foreground);
+  color: var(--type-color);
 }
 
 .comment {
@@ -74,6 +74,10 @@
   color: var(--attribute-color);
 }
 
+.property {
+  color: var(--property-color);
+}
+
 .angle {
   color: var(--angle-color);
 }
@@ -82,15 +86,31 @@
   color: var(--tag-color);
 }
 
+a {
+  color: var(--property-color);
+}
+
+a:active {
+  color: var(--function-color);
+}
+
 body {
-  color: var(--foreground);
-  background: var(--body-bg);
+  color: var(--text-color);
+  background: var(--body-bg-color);
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.contentContainer{
+  margin: 0 auto;
+  width: 100%;
+  background: var(--content-bg-color);
 }
 
 .mainContent {
-  margin: 0 auto;
-  max-width: 1024px;
-  width: 100%;
-  padding: 1rem;
-  background: var(--content-bg);
+  background: var(--content-bg-color);
+}
+
+.copyright{
+  color: var(--body-bg-color);
 }

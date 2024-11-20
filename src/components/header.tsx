@@ -40,7 +40,7 @@ const Header = () => {
                 </div>
                 <button className="flex" onClick={toggleTheme}>
                     <Image
-                        className="dark:invert"
+                        className="dark:invert pt-2"
                         src="/img/sun-moon.svg"
                         alt="Toggle Theme"
                         width={20}
@@ -50,14 +50,16 @@ const Header = () => {
             </div>
             <TopNav pathname={pathname} />
             <div className="flex flex-row text-2xl">
-                <div className="flex overflow-hidden">
-                    <span className="flex bracket">{"}"}</span>;
-                    <span className="flex comment pl-7">
-                        {"//"} ----------------
-                    </span>
+                <div className="flex flex-col overflow-hidden">
+                    <div className="flex flex-nowrap">
+                        <span className="bracket">{"}"}</span>;
+                        <span className="comment pl-7">
+                            {"//"} ------------------------
+                        </span>
+                    </div>
                 </div>
             </div>
-            <div className="text-2xl mt-10 text-nowrap">
+            <div className="text-2xl mt-5 text-nowrap">
                 <span className="secondaryKeyword">export </span>
                 <span className="primaryKeyword">const </span>
                 <span className="function">{hrPath}</span> =

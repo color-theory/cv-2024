@@ -7,27 +7,27 @@ export default function Home() {
     const theme = useTheme();
     if (!theme) return null;
 
-    const bodyClass = `grid grid-rows-[20px_1fr_20px] ${theme}`;
+    const bodyClass = `container contentContainer grid content-between min-h-svh`;
     return (
         <div className={bodyClass}>
-            <main className="mainContent flex flex-col md:p-10 h-lvh">
+            <main className="mainContent flex flex-col p-3 md:p-10 text-2xl">
                 <Header />
-                <div className="text-2xl sm:pl-10 text-nowrap">
+                <div className="sm:pl-10 text-nowrap">
                     <span className="angle">{"<"}</span>
                     <span className="tag">ul</span>
                     <span className="angle">{">"}</span>
                 </div>
-                <div className="text-2xl sm:pl-20 flex flex-col">
+                <div className="sm:pl-20 flex flex-col">
                     <div className="flex">
                         <span className="angle">{"<"}</span>
                         <span className="tag">li</span>
                         <span className="angle">{">"}</span>
                     </div>
                     <div>
-                        <ul className="sm:pl-10">
+                        <ul className="pl-10">
                             <li>
                                 <div className="flex flex-row flex-wrap">
-                                    <div className="flex flex-col basis-1/2 mt-10 sm:mt-0 pr-10">
+                                    <div className="flex flex-col basis-1/2 pr-10">
                                         <span className="comment">
                                             {"/* "}Frameworks & Tools:{" */"}
                                         </span>
@@ -37,6 +37,7 @@ export default function Home() {
                                             <li>React</li>
                                             <li>Redux</li>
                                             <li>React Query</li>
+                                            <li>Next.js</li>
                                             <li>Angular</li>
                                             <li>Docker</li>
                                             <li>Flask</li>
@@ -52,11 +53,12 @@ export default function Home() {
                                             <li>NGINX</li>
                                             <li>Kafka</li>
                                             <li>JSX</li>
+                                            <li>tailwindcss</li>
                                             <li>SASS</li>
                                             <li>LESS</li>
                                             <li>jQuery</li>
                                         </ul>
-                                        <span className="comment mt-10">
+                                        <span className="comment mt-5">
                                             {"/* "}Testing & Build:{" */"}
                                         </span>
                                         <ul>
@@ -77,7 +79,7 @@ export default function Home() {
                                             <li>Mercurial</li>
                                         </ul>
                                     </div>
-                                    <div className="flex flex-col basis-1/2  mt-10 sm:mt-0 pr-10">
+                                    <div className="flex flex-col basis-1/2  mt-5 lg:mt-0 pr-10">
                                         <span className="comment">
                                             {"/* "}Languages:{" */"}
                                         </span>
@@ -97,7 +99,7 @@ export default function Home() {
                                             <li>6502</li>
                                             <li>Assembly</li>
                                         </ul>
-                                        <span className="comment mt-10">
+                                        <span className="comment mt-5">
                                             {"/* "}Methodologies & Concepts:
                                             {" */"}
                                         </span>
@@ -135,13 +137,16 @@ export default function Home() {
                         <span className="angle">{">"}</span>
                     </div>
                 </div>
-                <div className="text-2xl sm:pl-10">
+                <div className="sm:pl-10">
                     <span className="angle">{"</"}</span>
                     <span className="tag">ul</span>
                     <span className="angle">{">"}</span>
                 </div>
-                <Footer />
+                <div>
+                    <span className="bracket">{")"}</span>;
+                </div>
             </main>
+            <Footer />
         </div>
     );
 }
