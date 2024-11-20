@@ -26,8 +26,13 @@ export default function Home() {
                     <div>
                         <ul className="pl-10">
                             <li>
-                                The University of Kansas{" "}
-                                <em className="text-nowrap">Lawrence, KS</em>
+                                <span className="comment">
+                                    {"/* "}The University of Kansas{" "}
+                                    <em className="text-nowrap">
+                                        Lawrence, KS
+                                    </em>
+                                    {" */"}
+                                </span>
                             </li>
                             <li>B.A. in Fine Arts, 2016</li>
                         </ul>
@@ -45,8 +50,13 @@ export default function Home() {
                     <div>
                         <ul className="pl-10">
                             <li>
-                                Kansai University{" "}
-                                <em className="text-nowrap">Osaka, Japan</em>
+                                <span className="comment">
+                                    {"/* "}Kansai University{" "}
+                                    <em className="text-nowrap">
+                                        Osaka, Japan
+                                    </em>
+                                    {" */"}
+                                </span>
                             </li>
                             <li>
                                 Intensive Japanese Language &amp; Culture
@@ -68,8 +78,13 @@ export default function Home() {
                     <div>
                         <ul className="pl-10">
                             <li>
-                                Pinnacle Career Institute{" "}
-                                <em className="text-nowrap">Kansas City, MO</em>
+                                <span className="comment">
+                                    {"/* "}Pinnacle Career Institute{" "}
+                                    <em className="text-nowrap">
+                                        Kansas City, MO
+                                    </em>
+                                    {" */"}
+                                </span>
                             </li>
                             <li>A.A.S. in Electronics, 2004</li>
                             <li>Graduated with Honors</li>

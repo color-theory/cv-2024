@@ -4,7 +4,7 @@ const myNav = [
     { text: "Bio", url: "/" },
     { text: "Education", url: "/education" },
     { text: "Skills", url: "/skills" },
-    { text: "Projects", url: "/projects" },
+    // { text: "Projects", url: "/projects" },
     { text: "Links", url: "/links" },
 ];
 
