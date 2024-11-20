@@ -3,7 +3,7 @@ import Header from "../../components/header";
 import Footer from "../../components/footer";
 import { useTheme } from "../../hooks/theme";
 
-export default function Home() {
+export default function Education() {
     const theme = useTheme();
     if (!theme) return null;
 

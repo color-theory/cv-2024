@@ -4,7 +4,7 @@ import Footer from "../../components/footer";
 import { useTheme } from "../../hooks/theme";
 import Link from "next/link";
 
-export default function Home() {
+export default function Links() {
     const theme = useTheme();
     if (!theme) return null;
 
