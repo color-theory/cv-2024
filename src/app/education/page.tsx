@@ -60,7 +60,7 @@ export default function Education() {
                             </li>
                             <li>
                                 Intensive Japanese Language &amp; Culture
-                                Program(Bekka),{" "}
+                                Program (Bekka),{" "}
                                 <span className="text-nowrap">2012-2013</span>
                             </li>
                         </ul>

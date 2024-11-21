@@ -42,12 +42,10 @@ export default function Skills() {
                                             <li>Docker</li>
                                             <li>Flask</li>
                                             <li>Ansible</li>
-                                            <li>PyTorch</li>
-                                            <li>TensorFlow</li>
-                                            <li>TensorFlow.js</li>
-                                            <li>OpenCV</li>
                                             <li>Lucene</li>
                                             <li>Elasticsearch</li>
+                                            <li>Auth0</li>
+                                            <li>Redis</li>
                                             <li>MongoDB</li>
                                             <li>GraphQL</li>
                                             <li>NGINX</li>
@@ -57,6 +55,10 @@ export default function Skills() {
                                             <li>SASS</li>
                                             <li>LESS</li>
                                             <li>jQuery</li>
+                                            <li>PyTorch</li>
+                                            <li>TensorFlow</li>
+                                            <li>TensorFlow.js</li>
+                                            <li>OpenCV</li>
                                         </ul>
                                         <span className="comment mt-5">
                                             {"/* "}Testing & Build:{" */"}
