@@ -14,7 +14,7 @@ export default function Login() {
             <main className="mainContent flex flex-col p-3 md:p-10 text-2xl">
                 <Header />
                 <div>
-                    <Link href="https://dev-45cqnlol3elffk2n.us.auth0.com/authorize?response_type=code&audience=t6GbvGDxdSIUlkPpCz2yVYAQw0Gm6r3n&client_id=t6GbvGDxdSIUlkPpCz2yVYAQw0Gm6r3n&redirect_uri=https://api.color.wtf/authenticate">
+                    <Link href="https://dev-45cqnlol3elffk2n.us.auth0.com/authorize?response_type=code&audience=https://api.color.wtf&client_id=t6GbvGDxdSIUlkPpCz2yVYAQw0Gm6r3n&redirect_uri=https://api.color.wtf/authenticate">
                         Login
                     </Link>
                 </div>
