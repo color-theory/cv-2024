@@ -23,6 +23,19 @@ export default function Home() {
 		 `,
             "color: #34D399; font-size: 16px;"
         );
+        fetch("https://api.color.wtf/protected", {
+            method: "GET",
+            credentials: "include",
+        })
+            .then((response) => response.json())
+            .then((data) =>
+                console.log(
+                    `checking if you're logged in. data: ${JSON.stringify(
+                        data
+                    )}`
+                )
+            )
+            .catch((error) => console.error(error));
     }, []);
 
     const theme = useTheme();
