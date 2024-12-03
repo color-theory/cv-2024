@@ -7,11 +7,15 @@ type Optional<T> = T | null;
 
 const Header = () => {
     const [theme, setTheme] = useState<Optional<string>>(null);
+    const [lang, setLang] = useState<Optional<string>>(null);
 
     useEffect(() => {
         const storedTheme = localStorage.getItem("theme") || "dark";
+        const storedLang = localStorage.getItem("lang") || "en";
         setTheme(storedTheme);
+        setLang(storedLang);
         document.documentElement.setAttribute("data-theme", storedTheme);
+        document.documentElement.setAttribute("lang", storedLang);
     }, []);
 
     const toggleTheme = () => {
@@ -19,6 +23,13 @@ const Header = () => {
         setTheme(newTheme);
         document.documentElement.setAttribute("data-theme", newTheme);
         localStorage.setItem("theme", newTheme);
+    };
+
+    const toggleLang = () => {
+        const newLang = lang === "en" ? "ja" : "en";
+        setLang(newLang);
+        document.documentElement.setAttribute("lang", newLang);
+        localStorage.setItem("lang", newLang);
     };
 
     const pathname = usePathname();
@@ -38,15 +49,36 @@ const Header = () => {
                     {" = "}
                     <span className="bracket">{"{"}</span>
                 </div>
-                <button className="flex" onClick={toggleTheme}>
-                    <Image
-                        className="dark:invert pt-2"
-                        src="/img/sun-moon.svg"
-                        alt="Toggle Theme"
-                        width={20}
-                        height={20}
-                    />
-                </button>
+                <div className="flex flex-col">
+                    <button className="flex" onClick={toggleTheme}>
+                        <Image
+                            className="dark:invert pt-2"
+                            src="/img/sun-moon.svg"
+                            alt="Toggle Theme"
+                            width={20}
+                            height={20}
+                        />
+                    </button>
+                    <button className="flex" onClick={toggleLang}>
+                        {lang === "ja" ? (
+                            <Image
+                                className="pt-2"
+                                src="/img/hinomaru.svg"
+                                alt="Toggle Language"
+                                width={20}
+                                height={20}
+                            />
+                        ) : (
+                            <Image
+                                className="pt-2"
+                                src="/img/unionjack.svg"
+                                alt="Toggle Language"
+                                width={20}
+                                height={20}
+                            />
+                        )}
+                    </button>
+                </div>
             </div>
             <TopNav pathname={pathname} />
             <div className="flex flex-row">
