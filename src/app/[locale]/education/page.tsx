@@ -1,17 +1,21 @@
 "use client";
-import Header from "../../components/header";
-import Footer from "../../components/footer";
-import { useTheme } from "../../hooks/theme";
+import { useTranslations } from "next-intl";
+import Header from "../components/header";
+import Footer from "../components/footer";
+import { useTheme } from "@/providers/ThemeProvider";
 
 export default function Education() {
-    const theme = useTheme();
+    const pageName = "EducationPage";
+    const t = useTranslations(pageName);
+
+    const { theme } = useTheme();
     if (!theme) return null;
 
     const bodyClass = `container contentContainer grid content-between min-h-svh`;
     return (
         <div className={bodyClass}>
             <main className="mainContent flex flex-col p-3 md:p-10 text-2xl">
-                <Header />
+                <Header pageName={t("title")} />
                 <div className="sm:pl-10 text-nowrap">
                     <span className="angle">{"<"}</span>
                     <span className="tag">ul</span>
@@ -27,14 +31,15 @@ export default function Education() {
                         <ul className="pl-10">
                             <li>
                                 <span className="comment">
-                                    {"/* "}The University of Kansas{" "}
+                                    {"/* "}
+                                    {t("kansasUniversity")}
                                     <em className="text-nowrap">
-                                        Lawrence, KS
+                                        {t("lawrence")}
                                     </em>
                                     {" */"}
                                 </span>
                             </li>
-                            <li>B.A. in Fine Arts, 2016</li>
+                            <li>{t("baFineArts")}</li>
                         </ul>
                     </div>
                     <div>
@@ -51,18 +56,16 @@ export default function Education() {
                         <ul className="pl-10">
                             <li>
                                 <span className="comment">
-                                    {"/* "}Kansai University{" "}
+                                    {"/* "}
+                                    {t("kansaiUniversity")}{" "}
                                     <em className="text-nowrap">
-                                        Osaka, Japan
+                                        {t("osaka")}
                                     </em>
                                     {" */"}
                                 </span>
                             </li>
-                            <li>
-                                Intensive Japanese Language &amp; Culture
-                                Program (Bekka),{" "}
-                                <span className="text-nowrap">2012-2013</span>
-                            </li>
+                            <li>{t("bekka")}</li>
+                            <li>{t("bekkaYears")}</li>
                         </ul>
                     </div>
                     <div>
@@ -79,15 +82,14 @@ export default function Education() {
                         <ul className="pl-10">
                             <li>
                                 <span className="comment">
-                                    {"/* "}Pinnacle Career Institute{" "}
-                                    <em className="text-nowrap">
-                                        Kansas City, MO
-                                    </em>
+                                    {"/* "}
+                                    {t("pinnacle")}
+                                    <em className="text-nowrap">{t("kcmo")}</em>
                                     {" */"}
                                 </span>
                             </li>
-                            <li>A.A.S. in Electronics, 2004</li>
-                            <li>Graduated with Honors</li>
+                            <li>{t("electronics")}</li>
+                            <li>{t("honors")}</li>
                         </ul>
                     </div>
                     <div>

@@ -1,17 +1,19 @@
-import Link from "next/link";
+import { Link, usePathname } from "../../../i18n/routing";
+import { useTranslations } from "next-intl";
 
-const myNav = [
-    { text: "Bio", url: "/" },
-    { text: "Education", url: "/education" },
-    { text: "Skills", url: "/skills" },
-    // { text: "Projects", url: "/projects" },
-    { text: "Links", url: "/links" },
-    // { text: "Projects", url: "/blog" },
-];
-
-const TopNavComponent: React.FC<{ pathname: string }> = ({ pathname }) => {
+const TopNavComponent: React.FC = () => {
+    const t = useTranslations("TopNav");
+    const myNav = [
+        { text: t("bio"), url: "/" },
+        { text: t("education"), url: "/education" },
+        { text: t("skills"), url: "/skills" },
+        // { text: "Projects", url: "/projects" },
+        { text: t("links"), url: "/links" },
+        // { text: "Projects", url: "/blog" },
+    ];
+    const pathname = usePathname();
     return (
-        <nav className={"topNavContainer"}>
+        <nav className={"topNavContainer flex"}>
             <ul className={"navList flex flex-col sm:flex-row flex-wrap pl-10"}>
                 {myNav.map((item, index) => {
                     const activeClass =
