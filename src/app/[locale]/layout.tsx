@@ -8,7 +8,7 @@ import { ThemeProvider } from "../../providers/ThemeProvider";
 
 type LayoutParams = Promise<{ locale: "ja" | "en" }>;
 
-export async function generateMetadata(params: LayoutParams) {
+export async function generateMetadata({ params }: { params: LayoutParams }) {
     const { locale } = await params;
     const t = await getTranslations({ locale, namespace: "Metadata" });
 
