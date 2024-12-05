@@ -1,21 +1,12 @@
-"use client";
-import { useEffect } from "react";
 import Footer from "./components/footer";
 import Header from "./components/header";
 import { useTranslations } from "next-intl";
 import { Link } from "../../i18n/routing";
-import { useTheme } from "@/providers/ThemeProvider";
 
 export default function Home() {
     const pageName = "BioPage";
     const t = useTranslations(pageName);
-
-    useEffect(() => {
-        console.log(t("consoleLog"), "color: #34D399; font-size: 16px;");
-    }, [t]);
-
-    const { theme } = useTheme();
-    if (!theme) return null;
+    console.log(t("consoleLog"), "color: #34D399; font-size: 16px;");
 
     const bodyClass = `container contentContainer grid content-between min-h-svh`;
     return (

@@ -1,16 +1,11 @@
-"use client";
 import { useTranslations } from "next-intl";
 import Header from "../components/header";
 import Footer from "../components/footer";
-import { useTheme } from "@/providers/ThemeProvider";
 import Link from "next/link";
 
 export default function Login() {
     const pageName = "LoginPage";
     const t = useTranslations(pageName);
-
-    const { theme } = useTheme();
-    if (!theme) return null;
 
     const bodyClass = `container contentContainer grid content-between min-h-svh`;
     return (

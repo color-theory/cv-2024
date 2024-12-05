@@ -1,15 +1,10 @@
-"use client";
 import { useTranslations } from "next-intl";
 import Header from "../components/header";
 import Footer from "../components/footer";
-import { useTheme } from "@/providers/ThemeProvider";
 
 export default function Projects() {
     const pageName = "ProjectsPage";
     const t = useTranslations(pageName);
-
-    const { theme } = useTheme();
-    if (!theme) return null;
 
     const bodyClass = `container contentContainer grid content-between min-h-svh`;
     return (
