@@ -49,4 +49,4 @@ jobs:
 
             - name: Restart the server
               run: |
-                  ssh ${{ secrets.DEPLOY_USER }}@${{ secrets.SERVER_IP }} "source ~/.bashrc && cd ${{ secrets.SITE_PATH }} && pm2 restart ${{ secrets.SITE_NAME }}"
+                  ssh ${{ secrets.DEPLOY_USER }}@${{ secrets.SERVER_IP }} "export PATH=\"${{ secrets.PATH_CONFIG }}\" && cd ${{ secrets.SITE_PATH }} && pm2 restart ${{ secrets.SITE_NAME }}"
