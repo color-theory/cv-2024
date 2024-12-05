@@ -1,13 +1,12 @@
 import Footer from "./components/footer";
 import Header from "./components/header";
+import HomeConsoleMessage from "./components/homeConsoleMessage";
 import { useTranslations } from "next-intl";
 import { Link } from "../../i18n/routing";
 
 export default function Home() {
     const pageName = "BioPage";
     const t = useTranslations(pageName);
-    console.log(t("consoleLog"), "color: #34D399; font-size: 16px;");
-
     const bodyClass = `container contentContainer grid content-between min-h-svh`;
     return (
         <div className={bodyClass}>
@@ -66,6 +65,7 @@ export default function Home() {
                     <span className="bracket">{")"}</span>;
                 </div>
             </main>
+            <HomeConsoleMessage />
             <Footer />
         </div>
     );
