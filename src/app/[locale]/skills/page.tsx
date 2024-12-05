@@ -116,6 +116,8 @@ export default function Skills() {
                                             <li>{t("pairProgramming")}</li>
                                             <li>{t("versionControl")}</li>
                                             <li>{t("cloudComputing")}</li>
+                                            <li>{t("i18n")}</li>
+                                            <li>{t("serverSideRendering")}</li>
                                             <li>{t("cicd")}</li>
                                             <li>{t("identity")}</li>
                                             <li>{t("orm")}</li>

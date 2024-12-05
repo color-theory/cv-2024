@@ -61,7 +61,9 @@
         "tdd": "テスト駆動開発",
         "refactoring": "リファクタリング",
         "distributed": "分散システム",
-        "fundamentalDsAlgos": "データ構造とアルゴリズム"
+        "fundamentalDsAlgos": "データ構造とアルゴリズム",
+        "serverSideRendering": "サーバーサイドレンダリング",
+        "i18n": "国際化(i18n)"
     },
     "LinksPage": {
         "title": "リンク"

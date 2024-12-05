@@ -61,7 +61,9 @@
         "tdd": "TDD",
         "refactoring": "Refactoring",
         "distributed": "Distributed Systems",
-        "fundamentalDsAlgos": "Fundamental Data Structures & Algorithms"
+        "fundamentalDsAlgos": "Fundamental Data Structures & Algorithms",
+        "serverSideRendering": "Server Side Rendering",
+        "i18n": "i18n"
     },
     "LinksPage": {
         "title": "Links"
