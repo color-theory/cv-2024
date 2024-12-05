@@ -1,48 +1,52 @@
 name: Build and Deploy
 
 on:
-  push:
-    branches:
-      - master
+    push:
+        branches:
+            - master
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
+    build:
+        runs-on: ubuntu-latest
 
-    steps:
-      - name: Checkout the repository
-        uses: actions/checkout@v4
-      - name: Install pnpm
-        uses: pnpm/action-setup@v4
+        steps:
+            - name: Checkout the repository
+              uses: actions/checkout@v4
+            - name: Install pnpm
+              uses: pnpm/action-setup@v4
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: "20"
-          cache: "pnpm"
+            - name: Set up Node.js
+              uses: actions/setup-node@v4
+              with:
+                  node-version: "20"
+                  cache: "pnpm"
 
-      - name: Cache Next.js build
-        uses: actions/cache@v4
-        with:
-          path: .next/cache
-          key: ${{ runner.os }}-nextjs-${{ hashFiles('package-lock.json', 'pnpm-lock.yaml') }}
-          restore-keys: |
-            ${{ runner.os }}-nextjs-
+            - name: Cache Next.js build
+              uses: actions/cache@v4
+              with:
+                  path: .next/cache
+                  key: ${{ runner.os }}-nextjs-${{ hashFiles('package-lock.json', 'pnpm-lock.yaml') }}
+                  restore-keys: |
+                      ${{ runner.os }}-nextjs-
 
-      - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+            - name: Install dependencies
+              run: pnpm install --frozen-lockfile
 
-      - name: Build the project
-        run: |
-          pnpm run build
+            - name: Build the project
+              run: |
+                  pnpm run build
 
-      - name: Setup SSH for deployment
-        run: |
-          mkdir -p ~/.ssh
-          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
-          chmod 600 ~/.ssh/id_rsa
-          ssh-keyscan ${{ secrets.SERVER_IP }} >> ~/.ssh/known_hosts
+            - name: Setup SSH for deployment
+              run: |
+                  mkdir -p ~/.ssh
+                  echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
+                  chmod 600 ~/.ssh/id_rsa
+                  ssh-keyscan ${{ secrets.SERVER_IP }} >> ~/.ssh/known_hosts
 
-      - name: Deploy to server
-        run: |
-          scp -r out/* ${{ secrets.DEPLOY_USER }}@${{ secrets.SERVER_IP }}:${{ secrets.SITE_PATH }}
+            - name: Deploy to server
+              run: |
+                  scp -r .next ${{ secrets.DEPLOY_USER }}@${{ secrets.SERVER_IP }}:${{ secrets.SITE_PATH }}
+
+            - name: Restart the server
+              run: |
+                  ssh ${{ secrets.DEPLOY_USER }}@${{ secrets.SERVER_IP }} "cd ${{ secrets.SITE_PATH }} && pm2 restart ${{ secrets.SITE_NAME }}"

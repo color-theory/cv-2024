@@ -1,0 +1,75 @@
+{
+    "Metadata": {
+        "title": "John Stringer - Full Stack Developer",
+        "description": "John Stringer is a Full Stack Developer with a passion for creating visually enticing and technically challenging products. Explore his portfolio to see his work."
+    },
+    "Header": {
+        "langImageUrl": "/img/unionjack.svg",
+        "langImageAlt": "English",
+        "themeToggleAlt": "Toggle Dark Mode"
+    },
+    "TopNav": {
+        "bio": "Bio",
+        "education": "Education",
+        "skills": "Skills",
+        "links": "Links"
+    },
+    "BioPage": {
+        "title": "Bio",
+        "p1s1": "Hello! Thanks for stopping by. My name is John and I'm a",
+        "p1s2": "This site was created to be a small demonstration of my web development abilities. You can find the code for this site on my ",
+        "p1s3": ". Please feel free to explore the other projects as well.",
+        "p2s1": "I have been intrigued by software development since my early childhood. My first programming",
+        "p2s2": " was on the Commodore 64 with MS-Basic, where I learned that I could make computers perform my bidding with a small amount of effort. Since then, my interests have evolved over the years, but I think that I'll always have a special place in my heart for ",
+        "p2s3": " that are visually enticing and technically challenging. If I can learn something new and create something beautiful in the process, I'll consider it a win any day of the week!",
+        "softwareEngineer": "\"Software Engineer\"",
+        "githubPage": "GitHub page",
+        "experience": "\"experience\"",
+        "developingProducts": "\"developing products\"",
+        "thanks": "Thank you again for your time.",
+        "signature": "John Stringer",
+        "consoleLog": "%c        ┌──────────────────────────────────┐\n           Hey there, curious developer!   \n           Welcome to my safe space.     \n           If you're poking around here,   \n           you must love this stuff as     \n           much as I do. See ya later 🐊     \n                                           \n                            -- John        \n        └──────────────────────────────────┘\n     "
+    },
+    "EducationPage": {
+        "title": "Education",
+        "kansasUniversity": "The University of Kansas ",
+        "lawrence": "Lawrence, KS",
+        "baFineArts": "B.A. in Fine Arts, 2016",
+        "kansaiUniversity": "Kansai University ",
+        "osaka": "Osaka, Japan",
+        "bekka": "Intensive Japanese Language & Culture Program (Bekka),",
+        "bekkaYears": "2012-2013",
+        "pinnacle": "Pinnacle Career Institute ",
+        "kcmo": "Kansas City, MO",
+        "electronics": "A.A.S in Electronics, 2004",
+        "honors": "Graduated with Honors"
+    },
+    "SkillsPage": {
+        "title": "Skills",
+        "frameworksTools": "Frameworks & Tools:",
+        "languages": "Languages:",
+        "testingBuild": "Testing & Build",
+        "methodologiesConcepts": "Methodologies & Concepts:",
+        "agile": "Agile (Scrum, Kanban)",
+        "pairProgramming": "Pair Programming",
+        "versionControl": "Version Control Strategies(Trunk based Feature Branches, Gitflow)",
+        "cloudComputing": "Cloud Computing (AWS)",
+        "cicd": "CI/CD Pipelines (GitLab, GitHub Actions)",
+        "identity": "Identity Management(Oauth2)",
+        "orm": "ORMs (EF, SQLAlchemy)",
+        "cqrs": "CQRS",
+        "tdd": "TDD",
+        "refactoring": "Refactoring",
+        "distributed": "Distributed Systems",
+        "fundamentalDsAlgos": "Fundamental Data Structures & Algorithms"
+    },
+    "LinksPage": {
+        "title": "Links"
+    },
+    "ProjectsPage": {
+        "title": "Projects"
+    },
+    "LoginPage": {
+        "title": "Login"
+    }
+}

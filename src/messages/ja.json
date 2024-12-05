@@ -1,0 +1,75 @@
+{
+    "Metadata": {
+        "title": "ジョン・ストリンガー フルスタックエンジニア",
+        "description": "ジョン・ストリンガーは、視覚的に魅力があり、技術的に挑戦を楽しむフルスタックエンジニアです。ご覧ください。"
+    },
+    "Header": {
+        "langImageUrl": "/img/hinomaru.svg",
+        "langImageAlt": "日本語",
+        "themeToggleAlt": "ダークモードを切り替える"
+    },
+    "TopNav": {
+        "bio": "自己紹介",
+        "education": "学歴",
+        "skills": "スキル",
+        "links": "リンク"
+    },
+    "BioPage": {
+        "title": "自己紹介",
+        "p1s1": "こんにちは！ご訪問ありがとうございます。ジョンと申します。そして",
+        "p1s2": "です。このサイトは、自分のウェブ開発能力を示すために作成されました。このサイトのコードは",
+        "p1s3": "で確認出来ます。是非、他のプロジェクトもご覧ください。",
+        "p2s1": "幼少期からソフトウェア開発に興味を持ち続けています。最初のプログラミング",
+        "p2s2": "は、コモドール64でのMS-Basicで、わずかな労力でコンピュータを自分の思い通りに動かせることを学びました。それ以来、興味は年々進化してきましたが",
+        "p2s3": "には、ずっと特別な思い入れがあると思います。もし新しいことを学び、その過程で美しいものを作り出せるなら、それはどんな日でも勝利だと思っています！",
+        "softwareEngineer": "\"ソフトウェアエンジニア\"",
+        "githubPage": "GitHubページ",
+        "experience": "\"経験\"",
+        "developingProducts": "\"ソフトウェア開発\"",
+        "thanks": "お時間をいただきありがとうございます。",
+        "signature": "ジョン・ストリンガー",
+        "consoleLog": "%c        ┌──────────────────────────────────┐\n           こんにちは！   \n           僕の安全場所へようこそ     \n           ここが見つかれたら、   \n           あなたもウェッブ開発     \n           が好きでしょうね★ じゃあね～🐊     \n                                           \n                            -- ジョン        \n        └──────────────────────────────────┘\n     "
+    },
+    "EducationPage": {
+        "title": "学歴",
+        "kansasUniversity": "カンザス州のローレンス市のカンザス大学",
+        "lawrence": "",
+        "baFineArts": "美術学士 (B.A.)、2016年",
+        "kansaiUniversity": "大阪府の大阪市の関西大学",
+        "osaka": "",
+        "bekka": "関西大学留学生別科、2012年～2013",
+        "bekkaYears": "",
+        "pinnacle": "ミスーリ州のカンザスシティ市のピナクル専門学校",
+        "kcmo": "",
+        "electronics": "電子工学の準学士 (A.A.S.), 2004年",
+        "honors": "優等卒業"
+    },
+    "SkillsPage": {
+        "title": "スキル",
+        "frameworksTools": "フレームワークとツール",
+        "languages": "言語",
+        "testingBuild": "テストとビルド",
+        "methodologiesConcepts": "方法論と概念",
+        "agile": "アジャイルソフトウェア開発",
+        "pairProgramming": "ペアプログラミング",
+        "versionControl": "バージョン管理",
+        "cloudComputing": "クラウド計算 (AWS)",
+        "cicd": "CI/CD パイプライン (GitLab, GitHub Actions)",
+        "identity": "アイデンティティ管理 (Oauth2)",
+        "orm": "ORM (EF, SQLAlchemy)",
+        "cqrs": "コマンドクエリ責任分離",
+        "tdd": "テスト駆動開発",
+        "refactoring": "リファクタリング",
+        "distributed": "分散システム",
+        "fundamentalDsAlgos": "データ構造とアルゴリズム"
+    },
+    "LinksPage": {
+        "title": "リンク"
+    },
+    "ProjectsPage": {
+        "title": "プロジェクト"
+    },
+    "LoginPage": {
+        "title": "ログイン"
+    }
+}

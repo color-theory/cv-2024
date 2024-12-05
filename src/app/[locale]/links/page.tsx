@@ -1,17 +1,17 @@
-"use client";
-import Header from "../../components/header";
-import Footer from "../../components/footer";
-import { useTheme } from "../../hooks/theme";
+import { useTranslations } from "next-intl";
+import Header from "../components/header";
+import Footer from "../components/footer";
+import { Link } from "../../../i18n/routing";
 
-export default function Projects() {
-    const theme = useTheme();
-    if (!theme) return null;
+export default function Links() {
+    const pageName = "LinksPage";
+    const t = useTranslations(pageName);
 
     const bodyClass = `container contentContainer grid content-between min-h-svh`;
     return (
         <div className={bodyClass}>
             <main className="mainContent flex flex-col p-3 md:p-10 text-2xl">
-                <Header />
+                <Header pageName={t("title")} />
                 <div className="sm:pl-10 text-nowrap">
                     <span className="angle">{"<"}</span>
                     <span className="tag">ul</span>
@@ -24,7 +24,23 @@ export default function Projects() {
                         <span className="angle">{">"}</span>
                     </div>
                     <div>
-                        <span className="comment">TBD</span>
+                        <ul className="pl-10">
+                            <li>
+                                <Link href="https://github.com/color-theory/">
+                                    GitHub
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="https://www.linkedin.com/in/john-stringer-63780279/">
+                                    LinkedIn
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="https://leetcode.com/u/jgstringer/">
+                                    LeetCode
+                                </Link>
+                            </li>
+                        </ul>
                     </div>
                     <div>
                         <span className="angle">{"<"}</span>

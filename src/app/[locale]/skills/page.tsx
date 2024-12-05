@@ -1,17 +1,16 @@
-"use client";
-import Header from "../../components/header";
-import Footer from "../../components/footer";
-import { useTheme } from "../../hooks/theme";
+import { useTranslations } from "next-intl";
+import Header from "../components/header";
+import Footer from "../components/footer";
 
 export default function Skills() {
-    const theme = useTheme();
-    if (!theme) return null;
+    const pageName = "SkillsPage";
+    const t = useTranslations(pageName);
 
     const bodyClass = `container contentContainer grid content-between min-h-svh`;
     return (
         <div className={bodyClass}>
             <main className="mainContent flex flex-col p-3 md:p-10 text-2xl">
-                <Header />
+                <Header pageName={t("title")} />
                 <div className="sm:pl-10 text-nowrap">
                     <span className="angle">{"<"}</span>
                     <span className="tag">ul</span>
@@ -29,7 +28,9 @@ export default function Skills() {
                                 <div className="flex flex-row flex-wrap">
                                     <div className="flex flex-col basis-1/2 pr-10">
                                         <span className="comment">
-                                            {"/* "}Frameworks & Tools:{" */"}
+                                            {"/* "}
+                                            {t("frameworksTools")}
+                                            {" */"}
                                         </span>
                                         <ul>
                                             <li>Node.js</li>
@@ -61,7 +62,9 @@ export default function Skills() {
                                             <li>OpenCV</li>
                                         </ul>
                                         <span className="comment mt-5">
-                                            {"/* "}Testing & Build:{" */"}
+                                            {"/* "}
+                                            {t("testingBuild")}
+                                            {" */"}
                                         </span>
                                         <ul>
                                             <li>Jest</li>
@@ -83,7 +86,9 @@ export default function Skills() {
                                     </div>
                                     <div className="flex flex-col basis-1/2  mt-5 lg:mt-0 pr-10">
                                         <span className="comment">
-                                            {"/* "}Languages:{" */"}
+                                            {"/* "}
+                                            {t("languages")}
+                                            {" */"}
                                         </span>
                                         <ul>
                                             <li>TypeScript</li>
@@ -102,31 +107,23 @@ export default function Skills() {
                                             <li>Assembly</li>
                                         </ul>
                                         <span className="comment mt-5">
-                                            {"/* "}Methodologies & Concepts:
+                                            {"/* "}
+                                            {t("methodologiesConcepts")}
                                             {" */"}
                                         </span>
                                         <ul>
-                                            <li>Agile (Scrum)</li>
-                                            <li>Paired Programming</li>
-                                            <li>Version Control </li>
-                                            <li>
-                                                Strategies(Trunk based, Feature
-                                                Branches, Gitflow)
-                                            </li>
-                                            <li>Cloud Computing(AWS)</li>
-                                            <li>
-                                                CI/CD Pipeline Configuration
-                                            </li>
-                                            <li>Identity Management(Oauth2)</li>
-                                            <li>ORMs (EF, SQLAlchemy)</li>
-                                            <li>CQRS</li>
-                                            <li>TDD</li>
-                                            <li>Refactoring</li>
-                                            <li>Distributed Systems</li>
-                                            <li>
-                                                Fundamental Data Structures &
-                                                Algorithms{" "}
-                                            </li>
+                                            <li>{t("agile")}</li>
+                                            <li>{t("pairProgramming")}</li>
+                                            <li>{t("versionControl")}</li>
+                                            <li>{t("cloudComputing")}</li>
+                                            <li>{t("cicd")}</li>
+                                            <li>{t("identity")}</li>
+                                            <li>{t("orm")}</li>
+                                            <li>{t("cqrs")}</li>
+                                            <li>{t("tdd")}</li>
+                                            <li>{t("refactoring")}</li>
+                                            <li>{t("distributed")}</li>
+                                            <li>{t("fundamentalDsAlgos")}</li>
                                         </ul>
                                     </div>
                                 </div>
