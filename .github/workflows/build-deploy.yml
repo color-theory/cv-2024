@@ -49,4 +49,4 @@ jobs:
 
             - name: Restart the server
               run: |
-                  ssh ${{ secrets.DEPLOY_USER }}@${{ secrets.SERVER_IP }} "cd ${{ secrets.SITE_PATH }} && pm2 restart ${{ secrets.SITE_NAME }}"
+                  ssh ${{ secrets.DEPLOY_USER }}@${{ secrets.SERVER_IP }} "cd ${{ secrets.SITE_PATH }} && echo ${{secrets.DEPLOY_USER}} > ./un.txt && pm2 restart ${{ secrets.SITE_NAME }}"
