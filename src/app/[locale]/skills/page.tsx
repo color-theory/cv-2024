@@ -39,6 +39,8 @@ export default function Skills() {
                                             <li>Redux</li>
                                             <li>React Query</li>
                                             <li>Next.js</li>
+                                            <li>Vue</li>
+                                            <li>Pinia</li>
                                             <li>Angular</li>
                                             <li>Docker</li>
                                             <li>Flask</li>
@@ -74,6 +76,7 @@ export default function Skills() {
                                             <li>Pytest</li>
                                             <li>Webpack</li>
                                             <li>Vite</li>
+                                            <li>Cloudflare</li>
                                             <li>Nuget</li>
                                             <li>Poetry</li>
                                             <li>NPM</li>
